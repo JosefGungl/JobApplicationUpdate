@@ -37,6 +37,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-tdleft-rgb: 164,168,99;
   --bs-YSBlue-rgb: 41,61,95;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
@@ -529,6 +530,8 @@ legend {
 legend + * {
   clear: left;
 }
+
+
 
 ::-webkit-datetime-edit-fields-wrapper,
 ::-webkit-datetime-edit-text,
@@ -6854,9 +6857,55 @@ textarea.form-control-lg {
 }
 /* style overrides */
 
+.clear {
+  clear: both;
+}
+
+.tdMain {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #393631;
+  font-size: 14px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.searchForm {
+  padding-top: 20px;
+  position: relative;
+  float: right;
+  font-size: 12px;
+  text-align: left;
+}
+
+.topImg {
+  width: 100%;
+  margin: 0px;
+  border-bottom: solid 0px;
+  border-collapse: collapse;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.tdImg {
+  padding-left: 1px;
+  width: 797px;
+  height: 1px;
+}
+
+.tdLeft {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  background-color: RGBA(var(--bs-tdleft-rgb));
+  vertical-align: top;
+  padding-top: 15px;
+}
+
 #header {
   width: 100%;
-  height: 150px;
+  height: 100px;
   background-color: RGBA(var(--bs-YSBlue-rgb));
 }
 
@@ -7244,6 +7293,14 @@ textarea.form-control-lg {
 
 .align-text-bottom {
   vertical-align: text-bottom !important;
+}
+
+.align-text-center {
+  text-align: center;
+}
+
+.align-text-left {
+  text-align: left; !important;
 }
 
 .align-text-top {
