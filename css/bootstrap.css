@@ -37,6 +37,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-YSBlue-rgb: 41,61,95;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -6850,6 +6851,20 @@ textarea.form-control-lg {
   display: block;
   clear: both;
   content: "";
+}
+/* style overrides */
+
+#header {
+  width: 100%;
+  height: 150px;
+  background-color: RGBA(var(--bs-YSBlue-rgb));
+}
+
+/* colors */
+
+.bg-YSBlue {
+  color: #fff !important;
+  background-color: RGBA(var(--bs-YSBlue-rgb));
 }
 
 .text-bg-primary {
