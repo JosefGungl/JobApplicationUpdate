@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yellowstone Jobs - Pre-Application Form</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 </head>
@@ -13,8 +13,7 @@
 <div class="justify-content-center">
     <div>
         <div id="header">
-            <div class="position-relative w-auto float-start align-text-left h-auto p-3"><a href="https://www.xanterrajobs.com/yellowstone-national-park-home/jobs" class="border-0"><img src="assets/logo-yellowstone.gif" alt="Bootstrap"></a></div>
-            <div class="position-relative top-50 p-5 float-start" id="google_translate_element"></div>
+            <div class="position-relative w-auto float-start align-text-left h-auto p-3"><a href="https://www.xanterrajobs.com/yellowstone-national-park-home/jobs" class="border-0"><img src="../assets/logo-yellowstone.gif" alt="Bootstrap"></a></div>
             <div class="justify-content-start"></div>
 
             <div class="searchForm p-3">
@@ -23,10 +22,9 @@
                     <tbody>
                     <tr>
                         <td>
-                            <label>
-                                <input class="input" name="search" type="text">
-                            </label>
-                            <input value="search" class="input" type="submit">
+                            <label for="searchBar" class="form-label"></label>
+                            <input id="searchBar" class="form-text" type="text">
+                            <button type="submit" class="btn btn-light border-black btn-sm">Search</button>
                         </td>
                     </tr>
                     <tr>
@@ -50,7 +48,7 @@
                 <tbody>
                 <tr>
                     <td class="tdLeft align-text-left align-top" rowspan="3">
-                        <table style="width: 195px;">
+                        <table style="width: 110px;">
                         </table>
                     </td>
                     <td class="tdImg align-top" colspan="2" align="center">
@@ -76,10 +74,27 @@
                             want!<br>
                             <br>
                             If you need to make ANY changes to your application for employment, please email us at info@yellowstonejobs.com.</p>
-                        <p><br>
+                        <br>
+
+                        <b>PLEASE DO NOT APPLY MORE THAN ONCE PER SEASON</b>. You may email application changes to info@yellowstonejobs.com.<br>
+                        <b> A positive letter of recommendation is required and must
+                            be sent before you can begin employment. A background check is also a
+                            condition of employment and will be done on every employee. Send letter of recommendation
+                            to:</b> <br>
+                            <p class="align-text-center">
+                                Yellowstone National Park Lodges,  Human Resource<br>
+                                PO Box 165, YNP<br>
+                                WY
+                                82190 <br>
+                                Telephone:  (307) 344- 5324 &nbsp;&nbsp;&nbsp; FAX: (307) 344 - 5441 &nbsp;&nbsp;&nbsp;
+                                E-mail: info@yellowstonejobs.com
+                            </p>
+
+
+                        <p>
                             Once you have read the above information click continue.
                         </p>
-                        <a href="applicationForm.html" class="btn btn-light border-black" tabindex="-1" role="button">Continue</a>
+                        <a href="applicationForm.html" class="btn btn-light border-black btn-sm" tabindex="-1" role="button">Continue</a>
                 </tr>
                 </tbody>
             </table>
@@ -87,18 +102,7 @@
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
+<script src="/js/custom.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
